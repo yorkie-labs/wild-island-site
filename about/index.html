@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>소개 · Wild Island</title>
+    <meta name="description" content="가로세로 500 m 섬에서 최대 20명이 함께 살아남는 브라우저 서바이벌 게임. 설치도 가입도 없어요." />
+    <link rel="icon" href="data:," />
+    <script type="module" crossorigin src="../assets/about-DLrCrBiW.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/modulepreload-polyfill-P2Xu9kJm.js">
+    <link rel="modulepreload" crossorigin href="../assets/islandmap-YsE7ecRh.js">
+    <link rel="stylesheet" crossorigin href="../assets/site-DYRIUHrF.css">
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap">
+        <a class="brand" href="../">Wild Island</a>
+        <nav class="nav" aria-label="사이트">
+          <a href="./" aria-current="page">소개</a>
+          <a href="../updates/">업데이트</a>
+          <a href="../how/">조작법</a>
+        </nav>
+        <a class="play" href="../">섬으로 들어가기</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="intro">
+        <div>
+          <h1>눈을 떠 보니 낯선 섬이에요</h1>
+          <p class="lead">
+            손에 든 것도 없이 모래밭에 누워 있어요. 가로세로 500 m짜리 섬이고, 많게는 스무 명이 이 섬에서 함께 지내요.
+            돌도끼를 만들고, 모닥불을 피우고, 침낭을 펴세요. 그다음은 당신이 정해요. 해변에서 낚시하며 조용히 지내도 되고,
+            독안개 낀 습지를 건너 북쪽 폐허의 금고를 노려도 돼요. 다만 이 섬 사람들이 모두 당신처럼 친절하지는 않아요.
+          </p>
+          <p class="actions">
+            <a class="play" href="../">섬으로 들어가기</a>
+            <span class="soft">설치도 가입도 없이 브라우저에서 바로 시작해요.</span>
+          </p>
+        </div>
+        <figure class="shot">
+          <img src="../site/beach.webp" width="960" height="600" alt="모래밭에 선 두 생존자. 왼쪽 아래는 바다, 오른쪽은 초원" />
+        </figure>
+      </section>
+
+      <section class="doing" aria-labelledby="doing-title">
+        <h2 id="doing-title">섬에서 하는 일</h2>
+        <div class="tabs">
+          <div class="tablist" role="tablist" aria-orientation="vertical" aria-labelledby="doing-title">
+            <button type="button" role="tab" id="tab-fishing" aria-controls="panel-fishing" aria-selected="true">낚시</button>
+            <button type="button" role="tab" id="tab-garden" aria-controls="panel-garden" aria-selected="false" tabindex="-1">텃밭</button>
+            <button type="button" role="tab" id="tab-camp" aria-controls="panel-camp" aria-selected="false" tabindex="-1">모닥불 요리</button>
+            <button type="button" role="tab" id="tab-deer" aria-controls="panel-deer" aria-selected="false" tabindex="-1">사슴 사냥</button>
+            <button type="button" role="tab" id="tab-home" aria-controls="panel-home" aria-selected="false" tabindex="-1">집과 습격</button>
+            <button type="button" role="tab" id="tab-dive" aria-controls="panel-dive" aria-selected="false" tabindex="-1">진주 잠수</button>
+          </div>
+          <div role="tabpanel" id="panel-fishing" aria-labelledby="tab-fishing" tabindex="0">
+            <p>해변 낚시터에서 E로 낚싯대를 던지고, 찌가 흔들리면 한 번 더 E. 잡은 물고기는 모닥불에 굽거나 시작 해변의 거래소에 팔아요.</p>
+            <figure class="shot"><img src="../site/fishing.webp" width="960" height="600" alt="물가에서 낚싯줄을 드리운 생존자" loading="lazy" /></figure>
+          </div>
+          <div role="tabpanel" id="panel-garden" aria-labelledby="tab-garden" tabindex="0" hidden>
+            <p>거래소에서 산 당근 씨앗을 텃밭에 심고 다른 일을 하다 돌아와 거둬요. 소나기가 오는 동안에는 두 배로 빨리 자라요.</p>
+            <figure class="shot"><img src="../site/garden.webp" width="960" height="600" alt="당근이 다 자란 텃밭 세 칸" loading="lazy" /></figure>
+          </div>
+          <div role="tabpanel" id="panel-camp" aria-labelledby="tab-camp" tabindex="0" hidden>
+            <p>모닥불 곁에 서 있으면 체력이 조금씩 차올라요. 생선 수프를 먹고 나가면 폭풍 속에서도 덜 추워요.</p>
+            <figure class="shot"><img src="../site/camp.webp" width="960" height="600" alt="밤에 모닥불 곁에 선 두 생존자" loading="lazy" /></figure>
+          </div>
+          <div role="tabpanel" id="panel-deer" aria-labelledby="tab-deer" tabindex="0" hidden>
+            <p>사슴 무리는 뛰는 발소리를 듣고 한꺼번에 달아나요. 사슴이 고개를 들면 멈추고, 풀을 뜯으면 다시 걸어서 창이 닿을 만큼 다가가요.</p>
+            <figure class="shot"><img src="../site/deer.webp" width="960" height="600" alt="풀을 뜯는 사슴 무리 곁에 선 생존자" loading="lazy" /></figure>
+          </div>
+          <div role="tabpanel" id="panel-home" aria-labelledby="tab-home" tabindex="0" hidden>
+            <p>바닥, 벽, 문, 지붕을 올려 집을 짓고 상자에 짐을 넣어 둬요. 남의 집 벽에 폭약을 붙이는 이웃도 있으니 문단속은 꼭 해요.</p>
+            <figure class="shot"><img src="../site/home.webp" width="960" height="600" alt="초원에 지은 작은 오두막과 현관의 상자" loading="lazy" /></figure>
+          </div>
+          <div role="tabpanel" id="panel-dive" aria-labelledby="tab-dive" tabindex="0" hidden>
+            <p>산호초 물가에서 Q로 잠수해 진주조개를 따요. 숨이 바닥나기 전에 Q로 떠올라야 하고, 바다가 거칠수록 진주가 잘 나와요.</p>
+            <figure class="shot"><img src="../site/dive.webp" width="960" height="600" alt="산호초 위를 헤엄치는 생존자" loading="lazy" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="map" aria-labelledby="map-title">
+        <h2 id="map-title">섬 지도</h2>
+        <p class="lead measure">모두가 남쪽 해변에서 시작해요. 안쪽으로, 북쪽으로 갈수록 거칠어지고 그만큼 좋은 것이 나와요.</p>
+        <div class="map-grid">
+          <canvas id="island-map" width="720" height="720" role="img" aria-label="지역별로 색을 칠한 섬 지도"></canvas>
+          <dl class="regions">
+            <dt data-region="beach">해변</dt><dd>처음 눈을 뜨는 곳. 거래소와 낚시터가 있고, 여기서는 아무도 다른 사람을 해칠 수 없어요.</dd>
+            <dt data-region="grass">초원</dt><dd>섬 한가운데. 나무와 돌이 넉넉하고 사슴 무리와 멧돼지가 다녀요. 집을 짓기 좋아요.</dd>
+            <dt data-region="forest">깊은 숲</dt><dd>서쪽의 빽빽한 숲. 버섯과 약초가 나고, 늑대 무리가 숲을 지켜요.</dd>
+            <dt data-region="ridge">철 능선</dt><dd>절벽으로 둘러싸인 높은 대지. 철광석이 여기서 나요.</dd>
+            <dt data-region="marsh">독성 습지</dt><dd>남동쪽 저지대. 독안개가 떠다니고 두꺼비가 독을 뱉어요. 방독면을 챙겨요.</dd>
+            <dt data-region="coast">폭풍 해안</dt><dd>북쪽과 동쪽의 바위 해안. 난파선 상자와 게가 있고, 폭풍이 치면 파도가 사람을 밀어내요.</dd>
+            <dt data-region="facility">버려진 연구소</dt><dd>북쪽 가운데의 폐허. 포탑이 지키고, 정해진 시간에만 금고가 열려요.</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">자주 묻는 것</h2>
+        <dl>
+          <dt>설치해야 하나요?</dt>
+          <dd>아니요. 링크를 열면 그 자리에서 섬에 들어가요. WebGL을 쓰는 최신 브라우저면 돼요.</dd>
+          <dt>계정을 만들어야 하나요?</dt>
+          <dd>아니요. 처음 들어오면 '생존자-3758' 같은 이름과 열쇠가 이 브라우저에 저장돼요. 같은 브라우저로 다시 오면 그 캐릭터로 이어서 해요. 브라우저 데이터를 지우면 캐릭터도 함께 사라져요.</dd>
+          <dt>휴대폰으로도 할 수 있나요?</dt>
+          <dd>아직은 키보드와 마우스가 있는 컴퓨터에서만 할 수 있어요. 어떤 키를 쓰는지는 <a href="../how/">조작법</a>에 있어요.</dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <span>Wild Island · <a href="../updates/">최근 업데이트</a></span>
+        <span>Yorkie로 만든 멀티플레이 섬</span>
+      </div>
+    </footer>
+  </body>
+</html>
